@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="descreption" content="A Free and open source Product Management System
+	web application implented by HTML, CSS, and JavaScript (JS)">
+	<title>Product Management System</title>
+	<link rel="stylesheet" type="text/css" href="static/css/style.css">
+</head>
+<body>
+
+	<div><button id="mode" onclick="changeMode()">Light</button></div>
+	<div class="crud">
+		<div class="head">
+			<h2>PMS</h2>
+			<p>Poducts Management System</p>
+		</div>
+
+		<div class="inputs">
+			<input type="text" id="title" placeholder="product name or title">
+
+			<div class="price">
+				<input onkeyup="getTotal()" type="number" id="price" placeholder="price">
+				<input onkeyup="getTotal()" type="number" id="taxes" placeholder="taxes">
+				<input onkeyup="getTotal()" type="number" id="ads" placeholder="ads">
+				<input onkeyup="getTotal()" type="number" id="discount" placeholder="discount">
+				<small id="total"></small>
+			</div>
+
+			<input type="number" id="count" placeholder="create multiple items (range 1 to 100)">
+			<input type="text" id="category" placeholder="category">
+
+			<button id="submit">Create</button>
+			<input type="text" id="search" placeholder="search">
+			<div class="search">
+				<button onclick="searchItem(this)" id="searchTitle">Search by title</button>
+				<button onclick="searchItem(this)" id="searchCategory">Search by category</button>
+			</div>
+		</div>
+
+		<div class="border">
+			<!-- Do not delete this section, it is used as border between the
+				"inputs" and "outputs" sections
+			-->
+		</div>
+
+		<div class="outputs">
+			<div><button id="deleteAll" onclick="deleteAllItems()"></button></div>
+			<table class="table-btn">
+				<tr>
+					<th>id</th>
+					<th>title</th>
+					<th>price</th>
+
+					<th>ads</th>
+					<th>taxes</th>
+					<th>discount</th>
+					<th>total</th>
+					<th>category</th>
+
+				</tr>
+
+				<!-- New products/items are inserted automatically using JS-->
+				<tbody id="table-body">
+				</tbody>
+			</table>
+		</div>		
+	</div>
+
+	<script type="text/javascript" src="static/js/main.js"></script>
+</body>
+</html>
