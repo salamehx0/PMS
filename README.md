@@ -1,37 +1,5 @@
-<style>
-	body{
-		background-color: grey;
-		font-family: arial;
-	}
-	
-	h1, h2, h3{
-		font-size: 32px;
-		font-family: monospace;
-		color: darkmagenta;
-	
-	}
+<link rel="stylesheet" type="text/css" href="static/css/readme-style.css">
 
-	h1:hover{
-		border: 5px;
-		border-color: yellow;
-		border-radius: 1em;
-
-	}
-
-	.images img{
-		padding: 5px;
-		margin: 10px;
-		width: 80%;
-		height: 80%;
-		border-style: dotted;
-		border-radius: 1em;
-	}
-
-	.images img:hover{
-		transform: scale(0.9);
-		border-color: green;
-	}
-</style>
 
 # PRODUCT MANAGEMET SYSTEM
 
